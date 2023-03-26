@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------- */
 /*-----------------------------------------Googlefont-----------------------------------------*/
 /*--------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -17,7 +17,6 @@ nav{
   z-index: 99;
   display: flex;
 }
-
 nav .navbar{
   height: 100%;
   width: 100%;
@@ -26,21 +25,18 @@ nav .navbar{
   margin: auto;
   display: flex;
 }
-
 .navbar .logo a{
   font-size: 30px;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
-
 nav .navbar .links{
   display: flex;
   padding-left: 0px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
 nav .navbar .links li{
   position: relative;
   display: flex;
@@ -49,7 +45,6 @@ nav .navbar .links li{
   list-style: none;
   padding: 0 14px;
 }
-
 nav .navbar .links li a{
   height: 100%;
   text-decoration: none;
@@ -58,28 +53,141 @@ nav .navbar .links li a{
   font-size: 15px;
   font-weight: 500;
 }
-
+.links i{
+ margin-right: 5px;
+}
 .navbar .nav-links .sidebar-logo{
   display: none;
 }
-
 .navbar .bx-menu{
   display: none;
 }
-
 .imgcont {
   margin-inline-end: auto;
 }
-
 .imgcont img {
   width: 50px;
   height: 50px;
   margin-left: 20px;
 }
-
 .dropdown {
   margin-inline-start: auto;
   margin-right: 20px;
+}
+.nav-links {
+    justify-content: center;
+    margin-inline-end: auto;
+}
+.btnsesion{
+  padding: 4px 16px 4px 16px;
+  border: 0;
+  width: 158px;
+}
+.btniniciosesion {
+  --bs-btn-bg: #fd950d00;
+  --bs-btn-hover-bg: #0b5dd700;
+  --bs-btn-border-color: #0d6dfd00;
+  --bs-btn-hover-border-color: #0a57ca00;
+}
+
+/* modal inicio de sesion */
+.modal-header {
+  border-bottom: 0px;
+}
+.imagenmodalsesiondiv {
+  display: flex;
+  justify-content: center;
+}
+.imagenmodalsesion {
+  width: 150px;
+  border-radius: 50%;
+  right: 40%;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0px;
+}
+
+.modal-dialog {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content{
+  background-color: #111213;
+  width: 400px;
+  position: absolute;
+}
+
+.form-contol {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-form-control-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+}
+
+button .btn-close {
+  color: #fff;
+}
+
+.hrmodalsesion {
+  color: white;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.modal-footer {
+  border-top-width: 0px;
+}
+
+.iconosmodalsesion {
+  content: "\f8a8";
+  color: white;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.modal-footer a {
+  margin-inline-end: auto;
+}
+
+.btnsesion {
+  --bs-btn-bg: #fd950d00;
+  --bs-btn-hover-bg: #0b5dd700;
+  --bs-btn-border-color: #0d6dfd00;
+  --bs-btn-hover-border-color: #0a57ca00;
+  --bs-btn-active-bg: #0a57ca00;
+}
+
+.dropdown-item {
+  justify-content: center;
+  display: flex;
+}
+
+.btnsesion:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+}
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.8;
 }
 /*--------------------------------------------------------------------------------------------*/
 /*----------------------------------------Seccion Hero----------------------------------------*/
@@ -689,10 +797,6 @@ h1 {
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
-}
-
-.imgcont {
-  margin-inline-end: initial;
 }
 
 }

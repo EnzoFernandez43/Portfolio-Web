@@ -34,45 +34,86 @@
     <!------------------------------ barra de navegacon ------------------------------>
     <!-------------------------------------------------------------------------------->
     <nav>
-      <div class="d-flex navbar">
+      <div class=" navbar">
         <i class='bx bx-menu'></i>
         <div class="imgcont">
           <img src="Imagenes/000.png" alt="">
         </div>
-        <div class="nav-links d-flex">
+        <div class="nav-links">
           <div class="sidebar-logo">
            <i class='bx bx-x' ></i>
           </div>
-
           <ul class="links">
            <li>
-              <a href="#hero">//INICIO</a>
+              <a href="#hero"><i class="bi bi-house-fill"></i>INICIO</a>
             </li>
             <li>
-             <a href="#sobre-mi">//SOBRE MÍ</a>
+             <a href="#sobre-mi"><i class="bi bi-person-circle"></i>SOBRE MÍ</a>
             </li>
            <li>
-             <a href="#experiencia">//EXPERIENCIA</a>
+             <a href="#experiencia"><i class="bi bi-cup-hot-fill"></i>EXPERIENCIA</a>
             </li>
             <li>
-              <a href="#proyectos">//PROYECTOS</a>
+              <a href="#proyectos"><i class="bi bi-terminal-fill"></i>PROYECTOS</a>
            </li>
            <li>
-              <a href="#contacto">//CONTACTO</a>
+              <a href="#contacto"><i class="bi bi-envelope-at-fill"></i>CONTACTO</a>
             </li>
           </ul>
         </div>
-        <div class="dropdown d-flex">
-         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="Imagenes/Icono-Pesataña.ico" alt="" class="rounded-circle" width="32" height="32">
-         </a>
-         <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">Configuracion</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Iniciar sesion</a></li>
-          </ul>
+      </div>
+  
+      <div class="dropdown d-flex">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+           <img src="Imagenes/Icono-Pesataña.ico" alt="" class="rounded-circle" width="32" height="32">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li>
+            <a class="dropdown-item" href="#">Configuracion</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>         
+          <li>
+            <button type="button" class="btnsesion btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Iniciar sesión</button>
+          </li>
+        </ul>
       </div>
     </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header" data-bs-theme="dark">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+          </div>
+          <div class="imagenmodalsesiondiv">
+            <img class="imagenmodalsesion" src="/Imagenes/cliente.jpg" alt="">
+          </div>                
+          <hr class="hrmodalsesion">
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 d-flex">
+                <label for="message-text" class="col-form-label"></label>
+                <i class="iconosmodalsesion bi bi-person-fill"></i>
+                <input type="text" class="form-contol" id="recipient-name" placeholder="Nombre">
+              </div>
+              <div class="mb-3 d-flex">
+                <label for="message-text" class="col-form-label"></label>
+                <i class="iconosmodalsesion bi bi-person-lock"></i>
+                <input type="text" class="form-control" id="recipient-contraseña" placeholder="Contraseña">
+              </div>
+            </form>
+          </div>
+          <hr class="hrmodalsesion">
+          <div class="modal-footer">
+            <a href="">¿Olvidaste la contraseña?</a>
+            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
     <div class="contenido">
     <!-------------------------------------------------------------------------------->
